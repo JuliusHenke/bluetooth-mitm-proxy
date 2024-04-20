@@ -1,8 +1,11 @@
 # Bluetooth Low Energy MITM proxy attack
 
-This repository contains a simple example of a Bluetooth Low Energy MITM proxy attack. The attack is performed by Eve,
-who is able to intercept and modify the communication between Alice and Bob. The attack is possible due to Eve spoofing
+This repository contains a simple example of a Bluetooth Low Energy MITM proxy attack. It is provided for educational purposes only and without liability.
+
+The attack is performed by Eve, who is able to intercept and modify the communication between Alice and Bob. The attack is possible due to Eve spoofing
 both Alice's and Bob's MAC addresses on two different HCIs and being first to connect to Bob.
+
+![Attack Scenario Diagram](attack-scenario.png)
 
 The Python library https://github.com/google/bumble is used to interact with Bluetooth HCI devices. Bumble is installed
 using `python -m pip install git+https://github.com/google/bumble.git@v0.0.190`
